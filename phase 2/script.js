@@ -12,7 +12,9 @@ const citytime2 = document.getElementById('city-time2')
 
 //function of generating weather 
 async function getdata(cityname) {
-   const promise = await fetch(`http://api.weatherapi.com/v1/current.json?key=7184d5d99b73415392880603251004&q=${cityname}&aqi=yes`)
+
+   
+   const promise = await fetch(`https://api.weatherapi.com/v1/current.json?key=7184d5d99b73415392880603251004&q=${cityname}&aqi=no`)
     return await promise.json()
 }
 
